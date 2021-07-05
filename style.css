@@ -1,0 +1,142 @@
+:root{
+
+    --clr-primary-red: hsl(0, 78%, 62%);
+    --clr-primary-cyan: hsl(180, 62%, 55%);
+    --clr-primary-orange: hsl(34, 97%, 64%);
+    --clr-primary-blue: hsl(212, 86%, 64%);
+    --clr-neutral-dark-blue: hsl(234, 12%, 34%);
+    --clr-neutral-gray-blue: hsl(229, 6%, 66%);
+    --clr-neutral-light-gray: hsl(0, 0%, 98%);
+
+    --ff-primary: 'Poppins', sans-serif;
+
+    --fw-200: 200;
+    --fw-400: 400;
+    --fw-600: 600;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    font-family: var(--ff-primary);
+}
+
+*{
+    background-color: var(--clr-neutral-light-gray);
+}
+
+body,
+h1,
+h2,
+h3,
+p{
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    margin: 6rem 3rem;
+}
+
+h1{
+    font-weight: var(--fw-600);
+    color: var(--clr-neutral-dark-blue);
+    font-size: 1.4rem;
+}
+
+p{
+    font-weight: var(--fw-200);
+    color: var(--clr-neutral-gray-blue);
+}
+
+header{
+    text-align: center;
+}
+
+header > h1{
+    margin: 0.8rem 0;
+}
+
+header p:nth-child(1){
+    font-size: 1.4rem;
+    font-weight: var(--fw-200);
+    color: var(--clr-neutral-dark-blue);
+}
+
+
+
+section{
+    border: 1px solid white;
+    box-shadow: 0.3rem 0.3rem 1rem 0.1rem var(--clr-neutral-gray-blue);
+    border-radius: 0.4rem;
+    margin-top: 2rem;
+    padding: 1.7rem 1.2rem;
+    border-top: 0.3rem solid black;
+}
+
+section > p{
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+section .img-container{
+    display: flex;
+    justify-content: flex-end;
+}
+
+section img{
+    width: 3rem;
+}
+
+.first{
+    border-top-color: var(--clr-primary-cyan);
+}
+
+.second{
+    border-top-color: var(--clr-primary-red);
+}
+
+.third{
+    border-top-color: var(--clr-primary-orange);
+}
+
+.fourth{
+    border-top-color: var(--clr-primary-blue);
+}
+
+@media screen and (min-width: 1440px){
+
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header{
+        max-width: 30rem;
+    }
+
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 10rem;
+    }
+
+    main > section{
+        height: 13rem;
+    }
+
+    section{
+        width: 20rem;
+    }
+
+    .middle{
+        margin: 0px 2rem;
+    }
+
+
+}
